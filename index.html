@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
   </head>
   <body>
     <!--=====HEADER=====-->
-    <header class="page-header">
+    <header class="page-header" hidden>
       <div class="container header-container">
         <nav class="page-navigation">
           <a class="logo" href="./index.html"
@@ -518,6 +518,45 @@
         </div>
       </div>
     </footer>
+    <!--- MOBILE MENU--->
+    <div class="mob-menu is-open">
+      <div class="container mob-menu-contaier">
+        <button type="button" class="mob-close-btn">
+          <svg class="mob-close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <nav class="mob-page-navigation">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="menu-link-mob" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mob-address" id="Contacts">
+          <ul class="mob-address-list">
+            <li>
+              <a class="mob-address-link-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mob-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <!-- backdrop-->
     <div class="backdrop is-open" hidden>
       <div class="modal">
         <button type="button" class="modal-close-btn">
