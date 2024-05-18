@@ -745,8 +745,6 @@ img {
       url(../images/hero/herodesc.jpg);
     max-width: 1440px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 57px;
     padding: 188px 0 188px;
   }
@@ -761,5 +759,213 @@ img {
         ),
         url(../images/hero/herodesc@2x.jpg);
     }
+  }
+}
+/*benefits*/
+.benefits {
+  padding: 96px 0 96px;
+}
+
+.benefits-list-icon {
+  display: none;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.benefits-list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+}
+.benfits-list-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list-title {
+    text-align: left;
+  }
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .benefits-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .benefits-list-item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .benefits {
+    padding: 120px 0 120px;
+  }
+  .benefits-list-icon {
+    display: initial;
+  }
+
+  .benefits-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .benefits-list-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .benefits-list-item {
+    width: calc((100%-72px) / 4);
+  }
+
+  .benefits-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+
+/*our team*/
+.our-team {
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.our-team-list-item {
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.container-our-team-cards {
+  padding: 32px 0;
+}
+
+.our-team-fullname {
+  text-transform: capitalize;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.our-team-list-text {
+  background-color: #ffffff;
+  text-transform: capitalize;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+.studio-social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 8px 16px;
+}
+.studio-icons-item {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.studio-icon-link:hover,
+.studio-icon-link:focus {
+  background-color: #404bbf;
+}
+
+.studio-icons {
+  fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team {
+    padding: 88px 120px;
+  }
+
+  .team-title {
+    margin-bottom: 64px;
+  }
+  .our-team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .our-team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-team {
+    padding: 120px 0;
+  }
+
+  .team-title {
+    margin-bottom: 72px;
+  }
+
+  .our-team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
